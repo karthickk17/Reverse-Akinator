@@ -37,7 +37,7 @@ def generate_embeddings(url):
     db = Chroma.from_documents(
         all_splits, 
         embeddings,
-        persist_directory='./chroma-embeddings',
+        # persist_directory='./chroma-embeddings',
         collection_name="rag-chroma-voyage"
         # collection_name="rag-chroma-openai"
     )
