@@ -17,10 +17,6 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 from streamlit_js_eval import streamlit_js_eval
 import streamlit as st
 
@@ -108,6 +104,13 @@ if not st.session_state['submit_flag']:
         st.info('The character is locked and loaded!')
         time.sleep(1)
         st.rerun()
+
+with st.expander("""How to play?"""):
+    st.markdown("""1. Choose difficulty: Easy or Hard. In easy mode, you can select the specific category of person while in hard mode, all the celebrities are included.
+2. Once you have selected the character, you can start asking questions.
+3. There are 3 hints available.
+4. There is no limit to the number of questions that can be asked.
+5. Enter your guess for the character's name in the guess text box and ask your questions at the bottom.""")
 
 if not st.session_state['submit_flag']:
     st.stop()
