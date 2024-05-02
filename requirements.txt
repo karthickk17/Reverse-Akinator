@@ -10,3 +10,4 @@ streamlit
 bs4
 langchain_text_splitters
 wikipedia-api
+chromadb
