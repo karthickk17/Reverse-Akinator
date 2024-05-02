@@ -9,4 +9,4 @@ streamlit_js_eval
 streamlit
 bs4
 langchain_text_splitters
-wikipediaapi
+wikipedia-api
