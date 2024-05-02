@@ -1,0 +1,12 @@
+langchain_community
+langchain_openai
+langchain_groq
+langchain_chroma
+langchain_voyageai
+langchain
+langchain_core
+streamlit_js_eval
+streamlit
+bs4
+langchain_text_splitters
+wikipediaapi
