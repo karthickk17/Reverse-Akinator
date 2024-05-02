@@ -11,4 +11,3 @@ bs4
 langchain_text_splitters
 wikipedia-api
 chromadb
-pysqlite3-binary
